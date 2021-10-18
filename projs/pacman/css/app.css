@@ -1,0 +1,120 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-align: center;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  position: relative;
+  background-color: black;
+  color: white;
+}
+.container {
+  width: 80rem;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header h2 {
+  font-size: 2.5rem;
+}
+.cell {
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.modal {
+  position: absolute;
+  display: none;
+
+  top: 60%;
+  left: 40%;
+  padding: 5px;
+  width: 300px;
+
+  border-radius: 2rem;
+  text-align: center;
+  background-color: #f9c74f;
+
+  animation: goDown 1s ease;
+}
+
+button {
+  display: inline-block;
+  cursor: pointer;
+
+  background-color: #e1ecf4;
+  border: 1px solid #7aa7c7;
+  box-shadow: rgba(255, 255, 255, 0.7) 0 1px 0 0 inset;
+  border-radius: 3px;
+
+  color: #39739d;
+  font-size: 13px;
+  /* font-weight: 400; */
+
+  /* margin: 0; */
+  padding: 8px;
+  transition: all 0.5s;
+}
+
+button:hover {
+  background-color: #b3d3ea;
+  color: #2c5777;
+}
+
+.pacman {
+  position: relative;
+  text-align: center;
+  display: block;
+  /* height: 100%; */
+  /* width: 100%; */
+  border-radius: 50%;
+  background-color: #ffc300;
+}
+.pacman::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 50%;
+
+  height: 100%;
+  width: 100%;
+  clip-path: polygon(100% 74%, 44% 48%, 100% 21%);
+  z-index: 1;
+  background-color: #111;
+}
+
+.pacman.left::after {
+  clip-path: polygon(0% 74%, 44% 48%, 0% 21%);
+}
+.pacman.right::after {
+  clip-path: polygon(100% 74%, 44% 48%, 100% 21%);
+}
+.pacman.up::after {
+  clip-path: polygon(21% 0%, 50% 50%, 74% 0%);
+}
+.pacman.down::after {
+  clip-path: polygon(21% 100%, 44% 48%, 74% 100%);
+}
+
+@keyframes goDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-10rem);
+  }
+  80% {
+    transform: translateY(2rem);
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

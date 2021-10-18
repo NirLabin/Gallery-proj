@@ -1,0 +1,102 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #d5fbf6;
+}
+
+.books-container {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+
+.book-table {
+  border-collapse: collapse;
+  margin: 25px 0;
+  font-size: 0.9em;
+  font-family: sans-serif;
+  min-width: 400px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+th {
+  background-color: #009879;
+  color: #ffffff;
+  text-align: center;
+}
+
+th,
+td {
+  padding: 12px 15px;
+}
+
+tr:nth-of-type(even) {
+  background-color: #f3f3f3;
+}
+
+tr {
+  border-bottom: 1px solid #dddddd;
+}
+
+button {
+  cursor: pointer;
+  margin-left: 10px;
+  border-radius: 10%;
+  font-size: 1.1rem;
+}
+
+.read {
+  background-color: lightblue;
+}
+
+.update {
+  background-color: yellow;
+}
+
+.delete {
+  background-color: red;
+}
+
+.pagination {
+  text-align: center;
+  margin-top: 25%;
+}
+
+.modal {
+  background-color: #ffdab9;
+  padding: 10px;
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  height: 100%;
+  min-width: 300px;
+}
+
+.modal img {
+  width: 100px;
+  height: 100px;
+}
+
+button {
+  background-color: #e1ecf4;
+  border-radius: 3px;
+  border: 1px solid #7aa7c7;
+  box-shadow: rgba(255, 255, 255, 0.7) 0 1px 0 0 inset;
+  box-sizing: border-box;
+  color: #000000;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 1.15385;
+  margin: 0;
+  outline: none;
+  padding: 8px 0.8em;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  white-space: nowrap;
+}

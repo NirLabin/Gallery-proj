@@ -1,12 +1,13 @@
 'use strict';
 
-gProjectes = [
+var gProjs = [
   {
     id: 'chess',
     name: 'Chess',
     title: 'My King is better ',
     desc: makeLorem(),
-    url: 'img/portfolio/01-full.jpg',
+    idx: 1,
+    link: 'projs/chess/index.html',
     publishedAt: 1448693940000,
     labels: ['Matrixes', 'mouse event'],
   },
@@ -14,8 +15,9 @@ gProjectes = [
     id: 'touchnum',
     name: 'Touch num',
     title: 'Can you beat it?',
+    idx: 2,
     desc: makeLorem(),
-    url: 'img/portfolio/02-full.jpg',
+    link: 'projs/touchnum/index.html',
     publishedAt: 1448693940000,
     labels: ['Matrixes', 'mouse event'],
   },
@@ -23,17 +25,19 @@ gProjectes = [
     id: 'minesweeper',
     name: 'Minesweeper',
     title: 'Be carefull!',
+    idx: 3,
     desc: makeLorem(),
-    url: 'img/portfolio/03-full.jpg',
+    link: 'projs/minesweeper/index.html',
     publishedAt: 1448693940000,
     labels: ['Matrixes', 'mouse event'],
   },
   {
     id: 'pacman',
     name: 'Pacman',
-    title: 'You need to eat somthing',
+    title: 'Lets eat!',
+    idx: 4,
     desc: makeLorem(),
-    url: 'img/portfolio/04-full.jpg',
+    link: 'projs/pacman/index.html',
     publishedAt: 1448693940000,
     labels: ['Matrixes', 'keyboard event'],
   },
@@ -41,8 +45,9 @@ gProjectes = [
     id: 'bookshop',
     name: 'Book Shop',
     title: 'Lets be smarter ',
+    idx: 5,
     desc: makeLorem(),
-    url: 'img/portfolio/05-full.jpg',
+    link: 'projs/bookshop/index.html',
     publishedAt: 1448693940000,
     labels: ['Cards', 'mouse event'],
   },
@@ -50,9 +55,14 @@ gProjectes = [
     id: 'todos',
     name: 'Todos',
     title: 'Mange your time!',
+    idx: 6,
     desc: makeLorem(),
-    url: 'img/portfolio/06-full.jpg',
+    link: 'projs/todos/index.html',
     publishedAt: 1448693940000,
     labels: ['list', 'mouse event'],
   },
 ];
+
+function getProjById(id) {
+  return gProjs.find((proj) => proj.id === id);
+}

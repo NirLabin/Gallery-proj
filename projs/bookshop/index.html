@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="css/main.css" />
+    <title>Book Shop</title>
+  </head>
+
+  <body onload="onInit()">
+    <h1>Welcome to the Book Shop!</h1>
+    <div class="add-book-section">
+      <input class="name" type="text" placeholder="Book name?" />
+      <input class="price" type="text" placeholder="Book price?" />
+      <button type="button" onclick="onAddBook()">Add new book</button>
+    </div>
+    <section class="books-container"></section>
+    <div class="pagination">
+      <button onclick="onPreviousPage()">⬅️ Prev page</button>
+      <button onclick="onNextPage()">Next page ➡️</button>
+    </div>
+
+    <div class="modal" hidden>
+      <h4></h4>
+      <img src="" alt="Book" />
+      <h5></h5>
+      <p></p>
+      <span>Rate this book!</span>
+      <input
+        class="rating"
+        type="number"
+        min="1"
+        max="9"
+        onchange="changeRating()"
+      />
+      <button onclick="onCloseModal()">Close</button>
+    </div>
+
+    <script src="js/util-service.js"></script>
+    <script src="js/storage-service.js"></script>
+    <script src="js/shop-service.js"></script>
+    <script src="js/shop-controller.js"></script>
+  </body>
+</html>
