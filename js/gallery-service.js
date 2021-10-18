@@ -1,0 +1,58 @@
+'use strict';
+
+gProjectes = [
+  {
+    id: 'chess',
+    name: 'Chess',
+    title: 'My King is better ',
+    desc: makeLorem(),
+    url: 'img/portfolio/01-full.jpg',
+    publishedAt: 1448693940000,
+    labels: ['Matrixes', 'mouse event'],
+  },
+  {
+    id: 'touchnum',
+    name: 'Touch num',
+    title: 'Can you beat it?',
+    desc: makeLorem(),
+    url: 'img/portfolio/02-full.jpg',
+    publishedAt: 1448693940000,
+    labels: ['Matrixes', 'mouse event'],
+  },
+  {
+    id: 'minesweeper',
+    name: 'Minesweeper',
+    title: 'Be carefull!',
+    desc: makeLorem(),
+    url: 'img/portfolio/03-full.jpg',
+    publishedAt: 1448693940000,
+    labels: ['Matrixes', 'mouse event'],
+  },
+  {
+    id: 'pacman',
+    name: 'Pacman',
+    title: 'You need to eat somthing',
+    desc: makeLorem(),
+    url: 'img/portfolio/04-full.jpg',
+    publishedAt: 1448693940000,
+    labels: ['Matrixes', 'keyboard event'],
+  },
+  {
+    id: 'bookshop',
+    name: 'Book Shop',
+    title: 'Lets be smarter ',
+    desc: makeLorem(),
+    url: 'img/portfolio/05-full.jpg',
+    publishedAt: 1448693940000,
+    labels: ['Cards', 'mouse event'],
+  },
+  {
+    id: 'todos',
+    name: 'Todos',
+    title: 'Mange your time!',
+    desc: makeLorem(),
+    url: 'img/portfolio/06-full.jpg',
+    publishedAt: 1448693940000,
+    labels: ['list', 'mouse event'],
+  },
+];
